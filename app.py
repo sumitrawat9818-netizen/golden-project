@@ -31,7 +31,7 @@ def generate_therapy_response(user_input: str, predicted_intent: str) -> str:
     """
     
     try:
-        # Using the 1.5 Flash model for speed and quality
+        # Using the 2.5 Flash model for speed and quality
         response = client.models.generate_content(
             model='gemini-1.5-flash',
             contents=PROMPT
@@ -83,3 +83,4 @@ if st.button("Get Support"):
     else:
 
         st.warning("Please type something first.")
+
